@@ -3,6 +3,7 @@ package com.memms.javafuncs;
 import DefaultPackage.*;
 import com.memms.javafuncs.Abstracts.AdultAbstract;
 import com.memms.javafuncs.Abstracts.HumanAbstract;
+import com.memms.javafuncs.DataStructures.Linear.Array;
 import com.memms.javafuncs.Inheritence.GeneralTest;
 import com.memms.javafuncs.Inheritence.Hierarchical.TestC;
 import com.memms.javafuncs.Inheritence.Results;
@@ -141,6 +142,15 @@ public class Main {
 
         System.out.println("Next, we will look at some data structures in java");
         System.out.println("This will be taking place from files with DataStructures package");
+        System.out.println("First we will look at linear data structures, specifically arrays");
+        System.out.println("This will be taking place from files with Linear package");
+        Array array = new Array(1);
+        array.printArray();
+        System.out.println(array.addElement(10));
+        System.out.println(array.addElement(20));
+        System.out.println("Another type of array is a 2 dimensional array (array of arrays) which can be used to represent a matrix");
+        Array array2 = new Array();
+        array2.print2DArray();
 
     }
 
