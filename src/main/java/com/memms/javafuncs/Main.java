@@ -151,7 +151,18 @@ public class Main {
         System.out.println("Another type of array is a 2 dimensional array (array of arrays) which can be used to represent a matrix");
         Array array2 = new Array();
         array2.print2DArray();
-
+        System.out.println("Lets try and delete an element from the array");
+        System.out.println(array.removeElement(1));
+        System.out.println(array.removeElement(10));
+        array.printArray();
+        array.addElement(10);
+        array.removeAtIndex(0);
+        array.setArray(new int[]{1,2,3,4,5,6,7,8,9});
+        System.out.println(array.getElement(5));
+        System.out.println(array.getSize());
+        array.setSize(40);
+        System.out.println(array.addAtIndex(10, 1));
+        array.printArray();
     }
 
     /**
